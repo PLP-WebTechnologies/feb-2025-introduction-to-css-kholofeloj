@@ -18,6 +18,10 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #333;
     color: white;
     padding: 20px;
@@ -43,14 +47,14 @@ header {
     background-color: #f4f4f4;
     min-height: 200px;
     padding: 20px;
-    margin: 20px;
+    margin: 50px;
     border-radius: 8px;
 }
 
 #about h1 {
-    font-size: 60px;
+    font-size: 32px;
     font-weight: 700;
-    margin: 50px 0;  
+    margin: 25px 0;  
 }
 
 #about p {
@@ -62,4 +66,90 @@ header {
 #about p span {
     font-weight: 700;
     color: #eb4f06;
+}
+
+#contact {
+    padding:50px 0;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#contact .contact-form h1 {
+    font-size: 24px;
+    font-weight: 700; 
+}
+
+#contact .contact-form {
+    padding: 35px 50px;
+    /* border: 1px dashed #333; */
+    background-color: white;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+#contact .contact-form input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#contact .contact-form textarea {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+
+
+.button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 350ms;
+}
+
+#submit {
+    background-color: #396e46;
+    color: white;
+}
+
+#submit:hover {
+    background-color: #02791e;
+}
+
+#clear {
+    background-color: #7a0000;
+    color: white;
+}
+
+#clear:hover {
+    background-color: #703333;
+}
+
+footer {
+    padding: 25px 0;
+    height: 150px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+footer li {
+    list-style-type: none;
 }
